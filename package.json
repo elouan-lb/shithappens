@@ -1,0 +1,24 @@
+{
+  "name": "shithappens",
+  "version": "1.0.0",
+  "description": "shithappens website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elouan-lb/shithappens.git"
+  },
+  "author": "Elouan Le Bars",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/elouan-lb/shithappens/issues"
+  },
+  "homepage": "https://github.com/elouan-lb/shithappens#readme"
+}
