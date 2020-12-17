@@ -1,15 +1,19 @@
-const { gulp, watch, series } = require('gulp');
+const gulp = require('gulp');
+const {
+  watch,
+  series
+} = require('gulp');
 const fileinclude = require('gulp-file-include');
-const formatHtml = require('gulp-format-html')
 const server = require('browser-sync').create();
 
 // Merge HTML files
-async function includeHTML(){
+async function includeHTML() {
   return gulp.src(
-    ['app/*.html',
-    '!app/header.html', // ignore
-    '!app/footer.html' // ignore
-    ])
+      ['app/**/*.html',
+        '!app/html_header.html', // ignore
+        '!app/sidebar.html', // ignore
+        '!app/footer.html' // ignore
+      ])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -24,8 +28,8 @@ async function reload() {
 
 // Copy assets after build
 async function copyAssets() {
-  gulp.src(['app/assets/**/*'])
-    .pipe(gulp.dest('dist/assets/'));
+  gulp.src(['app/**/*', '!app/**/*.html'])
+    .pipe(gulp.dest('dist/'));
 }
 
 // Build files html and reload server
