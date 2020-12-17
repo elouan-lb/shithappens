@@ -1,47 +1,43 @@
 @font-face {
-    font-family: 'Sporting Grotesque';
-    font-weight: bold;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c597238/Sporting_Grotesque-Bold_web.woff') format('woff');
+  font-family: "Sporting Grotesque";
+  font-weight: bold;
+  font-style: normal;
+  src: url("https://files.cargocollective.com/c597238/Sporting_Grotesque-Bold_web.woff") format("woff");
 }
 @font-face {
-    font-family: 'Sporting Grotesque';
-    font-weight: normal;
-    font-style: normal;
-    src: url('https://files.cargocollective.com/c597238/Sporting_Grotesque-Regular_web.woff') format('woff');
+  font-family: "Sporting Grotesque";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://files.cargocollective.com/c597238/Sporting_Grotesque-Regular_web.woff") format("woff");
 }
 
-
-
 body {
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    text-align: left;
-	font-family: "Sporting Grotesque";
-    font-size: 11px;
-
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  text-align: left;
+  font-family: "Sporting Grotesque";
+  font-size: 11px;
 }
 
 .logo {
-    top: 72px;
-    position: fixed;
-    width: 180px;
+  top: 72px;
+  position: fixed;
+  width: 180px;
 }
 
-.logo img{
-    width: 100%;
+.logo img {
+  width: 100%;
 }
 
-
-.menu{
-    text-align: left;
-    width: 17%;
-    position:fixed;
-    top: 126px;
-    line-height: 20px;
-    width: 17%;
+.menu {
+  text-align: left;
+  width: 17%;
+  position: fixed;
+  top: 126px;
+  line-height: 20px;
+  width: 17%;
 }
 
 /* SIDEBAR */
@@ -52,77 +48,71 @@ body {
 
 /* ARCHIVES */
 
-.archives{
-    text-align: left;
-    width: 17%;
-    position:fixed;
-    margin-top: 7%;
-    margin-left: 22%;
-    width: 17%;
+.archives {
+  text-align: left;
+  width: 17%;
+  position: fixed;
+  margin-top: 7%;
+  margin-left: 22%;
+  width: 17%;
 }
 .archives a {
   display: block;
   margin-bottom: 8%;
 }
 
-.lighthover, .lighthover a {
-      text-decoration: none;
-          color: black;
+.lighthover,
+.lighthover a {
+  text-decoration: none;
+  color: black;
 }
 
-
-.lighthover a:hover, .lighthover:hover {
+.lighthover a:hover,
+.lighthover:hover {
   text-decoration: none;
   color: grey;
 }
 
-
-
 .footer {
-    position: fixed;
-    bottom: 6%;
-        width: 2%;
-        line-height: 140%;
+  position: fixed;
+  bottom: 6%;
+  width: 2%;
+  line-height: 140%;
 }
 
-.footer img{
-    width: 300%;
+.footer img {
+  width: 300%;
 }
 
-
-.lnm{
-    position: fixed;
-    right:60px;
-    bottom: 35px;
-    width: 30px;
-
-
+.lnm {
+  position: fixed;
+  right: 60px;
+  bottom: 35px;
+  width: 30px;
 }
 
 .lnm span {
-      position: absolute;
-    right: 60px;
-    bottom: 3px;
-    visibility: hidden;
+  position: absolute;
+  right: 60px;
+  bottom: 3px;
+  visibility: hidden;
 }
 
 .lnm img:hover + span {
-    visibility: visible;
+  visibility: visible;
 }
 
-.lnm img{
-    width: 100%;
-            cursor: alias;
+.lnm img {
+  width: 100%;
+  cursor: alias;
 }
 
 .lnmtext {
-    color: #3F3E61;
- text-align: right;
-    height: 35px;
-    width : 890px;
-
+  color: #3f3e61;
+  text-align: right;
+  height: 35px;
+  width: 890px;
 }
-
 
 /* A PROPOS */
 
@@ -132,97 +122,60 @@ h4 {
   margin: 0;
 }
 
-.apropos{
-text-align: left;
+.apropos {
+  text-align: left;
   padding-right: 300px;
   padding-left: 360px;
   padding-top: 180px;
   padding-bottom: 00px;
-    }
-
-
-
-
+}
 
 .souscriredoc {
-
-      text-decoration: none;
+  text-decoration: none;
   color: black;
 }
 
 .souscriredoc:hover {
-
   text-decoration: none;
   color: grey;
 }
 
-
-
-
-
-
-
-
-.content1{
-text-align: left;
-margin-left: 470px;
-
+.content1 {
+  text-align: left;
+  margin-left: 470px;
 }
 
-.content1 img{
-width : 55%;
-
+.content1 img {
+  width: 55%;
 }
 
-
-.content2{
-text-align: left;
-margin-left: 470px;
-
+.content2 {
+  text-align: left;
+  margin-left: 470px;
 }
 
-.content2 img{
-width : 50%;
-margin-top: 5%;
-
+.content2 img {
+  width: 50%;
+  margin-top: 5%;
 }
 
-
-.content3{
-text-align: left;
-margin-left: 300px;
-
+.content3 {
+  text-align: left;
+  margin-left: 300px;
 }
 
-.content3 img{
-width : 90%;
-margin-top: 5%;
-
+.content3 img {
+  width: 90%;
+  margin-top: 5%;
 }
-
 
 .info {
-text-align:left;
-font-size: 11px;
-margin-top: 40px;
-margin-left: 22%;
-margin-right: 8%;
-
+  text-align: left;
+  font-size: 11px;
+  margin-top: 40px;
+  margin-left: 22%;
+  margin-right: 8%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width:360px){
+@media only screen and (max-width: 360px) {
 }
