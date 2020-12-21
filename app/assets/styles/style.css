@@ -11,19 +11,24 @@
   src: url("https://files.cargocollective.com/c597238/Sporting_Grotesque-Regular_web.woff") format("woff");
 }
 
+/* MAIN GRID & ELEMENTS */
+
 body {
-  margin-left: 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
+  padding-left:  clamp(40px, 4%, 60px);
+  padding-top:  clamp(40px, 4%, 60px);
+  padding-bottom: clamp(40px, 4%, 60px);
   text-align: left;
   font-family: "Sporting Grotesque";
   font-size: 11px;
+  display: grid;
+  grid-template-columns: 240px auto;
+  row-gap: 4%;
 }
 
 .logo {
-  top: 72px;
+  grid-column: 1;
   position: fixed;
+  top: clamp(40px, 10%, 60px);
   width: 180px;
 }
 
@@ -31,59 +36,47 @@ body {
   width: 100%;
 }
 
+/* SIDEBAR */
+
 .menu {
-  text-align: left;
-  width: 17%;
+  grid-column: 1;
   position: fixed;
-  top: 126px;
-  line-height: 20px;
-  width: 17%;
+  top: clamp(80px, 16%, 120px);
+  min-width: 180px;
+  max-width: 220px;
+  line-height: 160%;
+  height:80%;
 }
 
-/* SIDEBAR */
 .menu a {
   display: block;
   margin-top: 8%;
 }
 
+
+
 /* ARCHIVES */
 
 .archives {
-  text-align: left;
-  width: 17%;
-  position: fixed;
-  margin-top: 7%;
-  margin-left: 22%;
-  width: 17%;
+  grid-column: 2;
+  margin-top: 12%;
+  margin-left: clamp(40px, 12%, 200px);
 }
 .archives a {
   display: block;
-  margin-bottom: 8%;
+  margin-bottom: 24px;
 }
 
-.lighthover,
-.lighthover a {
-  text-decoration: none;
-  color: black;
-}
-
-.lighthover a:hover,
-.lighthover:hover {
-  text-decoration: none;
-  color: grey;
-}
-
+/* FOOTER */
 .footer {
   position: fixed;
-  bottom: 6%;
-  width: 2%;
-  line-height: 140%;
+  bottom: clamp(40px, 4%, 60px);
+  width: clamp(80px, 6%, 180px);
 }
 
 .footer img {
-  width: 300%;
+  width: 100%;
 }
-
 .lnm {
   position: fixed;
   right: 60px;
@@ -114,6 +107,45 @@ body {
   width: 890px;
 }
 
+
+/* ARTICLES */
+
+.article {
+  grid-column: 2;
+  overflow:hidden;
+}
+
+.content1 {
+  text-align: center;
+  margin-right: clamp(0px, 22%, 600px);
+}
+
+.content1 img {
+  width: clamp(360px, 54%, 800px);
+}
+
+.content2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.content2 img {
+  width: 50%;
+}
+
+.content3 {
+  text-align: left;
+}
+
+.content3 img {
+  width: 90%;
+  margin-top: 5%;
+}
+
+.info {
+  margin-top: 40px;
+}
+
 /* A PROPOS */
 
 h4 {
@@ -123,59 +155,29 @@ h4 {
 }
 
 .apropos {
-  text-align: left;
-  padding-right: 300px;
-  padding-left: 360px;
-  padding-top: 180px;
-  padding-bottom: 00px;
+  grid-column: 2;
+  margin-left: clamp(40px, 12%, 200px);
+  margin-top: 18%;
+  padding-right: 30%;
+}
+.apropos p{
+  margin-top: 0;
 }
 
-.souscriredoc {
+/* GENERAL */
+a {
+  color: black;
+  text-decoration:none;
+}
+
+.lighthover,
+.lighthover a {
   text-decoration: none;
   color: black;
 }
 
-.souscriredoc:hover {
+.lighthover a:hover,
+.lighthover:hover {
   text-decoration: none;
   color: grey;
-}
-
-.content1 {
-  text-align: left;
-  margin-left: 470px;
-}
-
-.content1 img {
-  width: 55%;
-}
-
-.content2 {
-  text-align: left;
-  margin-left: 470px;
-}
-
-.content2 img {
-  width: 50%;
-  margin-top: 5%;
-}
-
-.content3 {
-  text-align: left;
-  margin-left: 300px;
-}
-
-.content3 img {
-  width: 90%;
-  margin-top: 5%;
-}
-
-.info {
-  text-align: left;
-  font-size: 11px;
-  margin-top: 40px;
-  margin-left: 22%;
-  margin-right: 8%;
-}
-
-@media only screen and (max-width: 360px) {
 }
