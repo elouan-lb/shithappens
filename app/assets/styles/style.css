@@ -4,6 +4,7 @@
   font-style: normal;
   src: url("https://files.cargocollective.com/c597238/Sporting_Grotesque-Bold_web.woff") format("woff");
 }
+
 @font-face {
   font-family: "Sporting Grotesque";
   font-weight: normal;
@@ -12,10 +13,9 @@
 }
 
 /* MAIN GRID & ELEMENTS */
-
 body {
-  padding-left:  clamp(40px, 4%, 60px);
-  padding-top:  clamp(40px, 4%, 60px);
+  padding-left: clamp(40px, 4%, 60px);
+  padding-top: clamp(40px, 4%, 60px);
   padding-bottom: clamp(40px, 4%, 60px);
   text-align: left;
   font-family: "Sporting Grotesque";
@@ -25,10 +25,8 @@ body {
   row-gap: 4%;
 }
 
+/* SIDEBAR */
 .logo {
-  grid-column: 1;
-  position: fixed;
-  top: clamp(40px, 10%, 60px);
   width: 180px;
 }
 
@@ -36,16 +34,16 @@ body {
   width: 100%;
 }
 
-/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 8vh;
+}
 
 .menu {
-  grid-column: 1;
-  position: fixed;
-  top: clamp(80px, 16%, 120px);
   min-width: 180px;
   max-width: 220px;
   line-height: 160%;
-  height:80%;
+  height: 80%;
 }
 
 .menu a {
@@ -53,15 +51,13 @@ body {
   margin-top: 8%;
 }
 
-
-
 /* ARCHIVES */
-
 .archives {
   grid-column: 2;
   margin-top: 12%;
   margin-left: clamp(40px, 12%, 200px);
 }
+
 .archives a {
   display: block;
   margin-bottom: 24px;
@@ -77,6 +73,7 @@ body {
 .footer img {
   width: 100%;
 }
+
 .lnm {
   position: fixed;
   right: 60px;
@@ -91,7 +88,7 @@ body {
   visibility: hidden;
 }
 
-.lnm img:hover + span {
+.lnm img:hover+span {
   visibility: visible;
 }
 
@@ -107,12 +104,10 @@ body {
   width: 890px;
 }
 
-
 /* ARTICLES */
-
 .article {
   grid-column: 2;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .content1 {
@@ -147,7 +142,6 @@ body {
 }
 
 /* A PROPOS */
-
 h4 {
   text-decoration: underline;
   font-weight: normal;
@@ -160,14 +154,15 @@ h4 {
   margin-top: 18%;
   padding-right: 30%;
 }
-.apropos p{
+
+.apropos p {
   margin-top: 0;
 }
 
 /* GENERAL */
 a {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .lighthover,
