@@ -24,18 +24,21 @@
   }
 
   .article, .apropos, .archives {
+    position: relative;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row: 3;
     padding: 0;
-    margin-top: 40px;
     margin-left: 0px;
     margin-right: 0px;
   }
-  .content1, .content2, .content3 {
+  .article {
+    margin-top: 60px;
+  }
+  .content1, .content1, .content2 {
     width: 100%;
   }
-  .content1 img, .content2 img, .content3 img{
+  .content1 img, .content1 img, .content2 img{
     width: 100%;
   }
   .footer {
@@ -53,5 +56,17 @@
     right: 0;
     bottom: 0;
     padding-top: 60px;
+  }
+  .lnmtext {
+    display: none;
+  }
+  /* Hide archive menu on page */
+  .body-archive .archives-link {
+    display: none;
+  }
+  .archives {
+    margin-top: 0;
+    left: 0;
+    top: 0;
   }
 }
