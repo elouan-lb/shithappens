@@ -113,11 +113,11 @@ body {
 .content1 {
   text-align: center;
   margin-bottom: 40px;
-  margin-right:  max(40px, min(28%, 600px));
 }
 
 .content1 img {
-  width: max(360px, min(54%, 800px));
+  min-width: 400px;
+  max-width: 50%;
 }
 .content2 {
   text-align: left;
@@ -142,7 +142,7 @@ h4 {
 
 .apropos {
   grid-column: 2;
-  margin-left: max(40px, min(12%, 200px));
+  margin-left: 12%;
   margin-top: 16%;
   padding-right: 30%;
 }
