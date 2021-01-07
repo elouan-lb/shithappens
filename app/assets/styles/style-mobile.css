@@ -39,7 +39,7 @@
     width: 100%;
   }
   .content1 img, .content1 img, .content2 img{
-    width: 100%;
+    min-width: 100%;
   }
   .footer {
     position: relative;
